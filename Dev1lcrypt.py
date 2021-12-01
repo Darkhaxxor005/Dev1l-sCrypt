@@ -257,7 +257,6 @@ stringo = [rsa,rsa1,lorem,text]
 _output_ = "backdoor.py" # edit this line is you want edit default output .
 _byte_ = (_output_) + "c" # bytecode format
 
-# if platform is linux and NXcrypt isn't launched  as root
 if (sys.platform.startswith("linux")) :
 	if (subprocess.getoutput("whoami")) != "root" :
 		print ("run it as root")
